@@ -1,0 +1,321 @@
+:root {
+    --primary-color: #c2c2d6;
+    --secondary-color: #000000;
+    --third-color: #004466;
+    --fourth-color: #ac3939;
+    --fifth-color: #4d4d4d;
+    --sixth-color: #666666;
+    --seventh-color: #ebebeb;
+    --eight-color: #ffa500;
+    --nineth-color: #47476b;
+    --font-color: #527c8d;
+    --shared-tech-no: 'Share Tech Mono', monospace;
+    --orbitron: 'Orbitron', sans-serif;
+}
+
+
+body {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--seventh-color);
+
+    .jsCalculator-outerbody{
+        
+        .jsCalculator {
+            background-color: var(--secondary-color);
+            border: 3px solid var(--nineth-color);
+            width: 20rem;
+            height: 100%;
+            display: grid;
+            padding: .3rem;
+            position: relative;
+            user-select: none;
+
+            .header-display {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                font-family: var(--orbitron);
+                word-break: break-all;
+
+                h4 {
+                    color: var(--eight-color);
+                    text-align: end;
+                    font-size: 1rem;
+                    margin: 0 0 0 0;
+                    /*put this height property in the JSX with condition that if value is more than like 26
+                    then the value will set to auto*/
+                }
+
+                h2 {
+                    text-align: end;
+                    font-size: 1.3rem;
+                    height: 2rem;
+                    margin: 0 0 0 0;
+                    /*put this height property in the JSX with condition that if value is more than like 26
+                    then the value will set to auto*/
+                }
+            }
+
+            .calculator-buttons {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                height: 21rem;
+                gap: 1px;
+                font-size: 1.25rem;
+                position: relative;
+                font-family: var(--shared-tech-no);
+                
+                .clear {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    grid-column: 1 / 3;
+                    grid-row: 1;
+                    background-color: var(--fourth-color);
+
+                    &:hover {
+                        color: var(--secondary-color);
+                        box-shadow: 1px 1px var(--primary-color), -1px -1px var(--primary-color);
+                    }
+                }
+
+                .divide {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    grid-column: 3;
+                    grid-row: 1;
+                    background-color: var(--sixth-color);
+
+                    &:hover {
+                        color: var(--secondary-color);
+                        box-shadow: 1px 1px var(--primary-color), -1px -1px var(--primary-color);
+                    }
+                }
+
+                .multiply {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    grid-column: 4;
+                    grid-row: 1;
+                    background-color: var(--sixth-color);
+
+                    &:hover {
+                        color: var(--secondary-color);
+                        box-shadow: 1px 1px var(--primary-color), -1px -1px var(--primary-color);
+                    }
+                }
+
+                .subtract {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    grid-column: 4;
+                    grid-row: 2;
+                    background-color: var(--sixth-color);
+
+                    &:hover {
+                        color: var(--secondary-color);
+                        box-shadow: 1px 1px var(--primary-color), -1px -1px var(--primary-color);
+                    }
+                }
+
+                .add {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    grid-column: 4;
+                    grid-row: 3;
+                    background-color: var(--sixth-color);   
+                    
+                    &:hover {
+                        color: var(--secondary-color);
+                        box-shadow: 1px 1px var(--primary-color), -1px -1px var(--primary-color);
+                    }
+                }
+
+                .nine {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    grid-column: 3;
+                    grid-row: 2;
+                    background-color: var(--fifth-color);
+
+                    &:hover {
+                        color: var(--secondary-color);
+                        box-shadow: 1px 1px var(--primary-color), -1px -1px var(--primary-color);
+                    }
+                }
+
+                .eight {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    grid-column: 2;
+                    grid-row: 2;
+                    background-color: var(--fifth-color);
+
+                    &:hover {
+                        color: var(--secondary-color);
+                        box-shadow: 1px 1px var(--primary-color), -1px -1px var(--primary-color);
+                    }
+                }
+
+                .seven {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    grid-column: 1;
+                    grid-row: 2;
+                    background-color: var(--fifth-color);
+
+                    &:hover {
+                        color: var(--secondary-color);
+                        box-shadow: 1px 1px var(--primary-color), -1px -1px var(--primary-color);
+                    }
+                }
+
+                .six {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    grid-column: 3;
+                    grid-row: 3;
+                    background-color: var(--fifth-color);
+
+                    &:hover {
+                        color: var(--secondary-color);
+                        box-shadow: 1px 1px var(--primary-color), -1px -1px var(--primary-color);
+                    }
+                }
+
+                .five {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    grid-column: 2;
+                    grid-row: 3;
+                    background-color: var(--fifth-color);
+
+                    &:hover {
+                        color: var(--secondary-color);
+                        box-shadow: 1px 1px var(--primary-color), -1px -1px var(--primary-color);
+                    }
+                }
+
+                .four {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    grid-column: 1;
+                    grid-row: 3;
+                    background-color: var(--fifth-color);
+
+                    &:hover {
+                        color: var(--secondary-color);
+                        box-shadow: 1px 1px var(--primary-color), -1px -1px var(--primary-color);
+                    }
+                }
+
+                .three {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    grid-column: 3;
+                    grid-row: 4;
+                    background-color: var(--fifth-color);
+
+                    &:hover {
+                        color: var(--secondary-color);
+                        box-shadow: 1px 1px var(--primary-color), -1px -1px var(--primary-color);
+                    }
+                }
+
+                .two {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    grid-column: 2;
+                    grid-row: 4;
+                    background-color: var(--fifth-color);
+
+                    &:hover {
+                        color: var(--secondary-color);
+                        box-shadow: 1px 1px var(--primary-color), -1px -1px var(--primary-color);
+                    }
+                }
+
+                .one {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    grid-column: 1;
+                    grid-row: 4;
+                    background-color: var(--fifth-color);
+
+                    &:hover {
+                        color: var(--secondary-color);
+                        box-shadow: 1px 1px var(--primary-color), -1px -1px var(--primary-color);
+                    }
+                }
+
+                .zero {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    grid-column: 1 / 3;
+                    grid-row: 5;
+                    background-color: var(--fifth-color);
+                    
+                    &:hover {
+                        color: var(--secondary-color);
+                        box-shadow: 1px 1px var(--primary-color), -1px -1px var(--primary-color);
+                    }
+                }
+
+                .decimal {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    grid-column: 3;
+                    grid-row: 5;
+                    background-color: var(--fifth-color);
+
+                    &:hover {
+                        color: var(--secondary-color);
+                        box-shadow: 1px 1px var(--primary-color), -1px -1px var(--primary-color);
+                    }
+                }
+
+                .equals {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    grid-column: 4;
+                    grid-row: 4 / 6;
+                    background-color: var(--third-color);
+
+                    &:hover {
+                        color: var(--secondary-color);
+                        box-shadow: 1px 1px var(--primary-color), -1px -1px var(--primary-color);
+                    }
+                }
+            }
+        }
+
+        .redesign-recoded{
+            text-align: center;
+            font-family: var(--shared-tech-no);
+            color: var(--secondary-color);
+            font-size: .8rem;
+        }
+    }
+  
+}
